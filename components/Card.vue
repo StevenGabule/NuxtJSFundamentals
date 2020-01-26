@@ -3,6 +3,7 @@
 	  <div class="card-header">Post No. {{ post.id }}</div>
 	  <div class="card-body">
 	    <h5 class="card-title">{{ post.title}}</h5>
+	    <nuxt-link :to="{name: 'posts-id', params: { id: post.id }}" class="btn btn-primary">See more</nuxt-link>	
 	  </div>
 	</div>
 </template>
